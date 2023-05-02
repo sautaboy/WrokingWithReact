@@ -13,6 +13,9 @@ function App() {
   let [initialValue, setInitialValue] = useState(0)
 
 
+  // This State is for toggling
+  const [toggle, setToggle] = useState(true)
+
   return (
     <div className='App'>
       <div>
@@ -28,18 +31,34 @@ function App() {
       {/* Next exercise */}
       <div className='buttons'>
         <button onClick={() => {
+          // this is annonous function
           setInitialValue(initialValue + 1)
         }}>Increase</button>
+
         <button onClick={() => {
+          // this is annonous function
           setInitialValue(initialValue - 1)
         }}>Decrease</button>
+
+
         <button onClick={() => {
+          // this is annonous function
           setInitialValue(0)
-        }}>Make Zero</button>
+        }}></button>
         <button>{initialValue}</button>
       </div>
-    </div>
 
+
+
+      {/* Show and Hide  */}
+      <button onClick={() =>
+      // this is annonous function
+      {
+        setToggle(!toggle)
+      }}>{toggle === true ? "Hide" : "Show"}</button>
+      {toggle && <h1>Hello My Name is Ashok Giri</h1>}
+
+    </div >
   );
 }
 
