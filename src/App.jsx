@@ -1,6 +1,8 @@
 // import logo from './logo.svg'/;
 import './App.css';
 import { useState } from 'react';
+// import ToDoList from './components/ToDoList';
+import UseReducer from './components/UseReducer';
 function App() {
 
   // These State are for Chaging the color 
@@ -58,9 +60,11 @@ function App() {
       }}>{toggle === true ? "Hide" : "Show"}</button>
       {toggle && <h1>Hello My Name is Ashok Giri</h1>}
 
-      hello Mula
-    </div >
 
+
+      {/* Working With Use Reducer */}
+      <UseReducer />
+    </div >
   );
 }
 
