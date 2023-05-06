@@ -3,6 +3,9 @@ import './App.css';
 import { useState } from 'react';
 // import ToDoList from './components/ToDoList';
 import UseReducer from './components/UseReducer';
+import UseReducer2 from './components/UseReducer2';
+import FetchApi from './components/FetchApi';
+import UseRef from './components/UseRef';
 function App() {
 
   // These State are for Chaging the color 
@@ -64,6 +67,12 @@ function App() {
 
       {/* Working With Use Reducer */}
       <UseReducer />
+      <UseReducer2/>
+
+
+      {/* Working With Fetch Api */}
+      {/* <FetchApi/> */}
+      <UseRef/>
     </div >
   );
 }

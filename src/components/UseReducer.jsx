@@ -19,6 +19,7 @@ export default function UseReducer() {
     const [state, dispatch] = useReducer(reducer, { count: 0, showText: TextTrackCue })
     return (
         <div>
+            <hr />
             <h1>{state.count}</h1>
             <button onClick={() => {
                 dispatch({ type: "Incremental" })
