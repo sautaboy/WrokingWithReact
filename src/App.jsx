@@ -4,9 +4,12 @@ import { useState } from 'react';
 // import ToDoList from './components/ToDoList';
 import UseReducer from './components/UseReducer';
 import UseReducer2 from './components/UseReducer2';
-import FetchApi from './components/FetchApi';
+// import FetchApi from './components/FetchApi';
 import UseRef from './components/UseRef';
+import UseContext from './components/UseContext';
 function App() {
+
+
 
   // These State are for Chaging the color 
   const [colorName, setColorName] = useState("Black")
@@ -67,12 +70,17 @@ function App() {
 
       {/* Working With Use Reducer */}
       <UseReducer />
-      <UseReducer2/>
+      <UseReducer2 />
 
 
       {/* Working With Fetch Api */}
       {/* <FetchApi/> */}
-      <UseRef/>
+      <UseRef />
+
+
+
+      {/* Importing UseContext */}
+      <UseContext />
     </div >
   );
 }

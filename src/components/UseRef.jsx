@@ -11,6 +11,8 @@ export default function UseRef() {
         <div>
             <input type="text" placeholder='Enter Your Name' ref={inputName} />
             <button onClick={click}>Console Name</button>
+            <hr />
+            
         </div>
     )
 }
