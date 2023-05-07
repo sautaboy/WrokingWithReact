@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Usereducer() {
+export default function Home() {
   return (
     <div>
-      reducer
+      home
     </div>
   )
 }

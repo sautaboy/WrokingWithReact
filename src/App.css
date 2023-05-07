@@ -1,46 +1,61 @@
-.App {
+* {
+  list-style: none !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.navbar {
+  background: #edd2d2;
   text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.listItem {
+  display: flex;
+  gap: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listItem a {
+  color: black;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* 
+ */
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  margin: 1rem;
+  padding: 1rem 3rem;
+  background: #000;
+  color: white;
+  border-radius: 1rem;
+}
+
+hr {
+  height: .5rem;
+  background: green;
+  width: 100%;
+}
+
+.useState2 {
+  /* background: red; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-
-button {
-  margin: 0 1rem;
-  background: wheat;
+  gap: 1rem;
+  width: 100%;
+  text-align: justify;
+  padding: 1rem;
 }
