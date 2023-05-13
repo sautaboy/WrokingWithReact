@@ -25,47 +25,40 @@ body {
 /* Sign Up Page CSS is Here */
 .signUpContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  background-color: antiquewhite;
-  height: 95vh;
-}
-
-.signUpContainer h1 {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: .5rem 0;
-}
-
-.infoField {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  background-color: antiquewhite;
+  flex-direction: column;
+  gap: .5rem 0;
 }
 
-.infoField label {
+.signUpContainer input {
   width: 90%;
-  padding: 0 0 .5rem 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: bold;
-}
-
-.infoField input {
   padding: .5rem 0;
-  text-align: left;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
 }
 
-.infoField :placeholder-shown {
-  text-align: left;
+.outputData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem 0;
+  text-align: justify;
+  padding: .5rem 0;
 }
 
-.infoField button {
-  padding: .5rem 2rem;
-  float: right;
+.outputData p {
+  background: #000;
+  color: white;
+  width: 90%;
+  padding: .5rem 0;
+}
+
+.outputData span {
+  color: hotpink;
+}
+
+.signUpContainer .errorMessage {
+  color: red;
 }
 
 /* About Page CSS is Here */
