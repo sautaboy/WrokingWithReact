@@ -1,43 +1,39 @@
 import React, { createContext, useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import Usecontext from './components/Usecontext';
-import Usereducer from './components/Usereducer';
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import UseState from './components/UseState';
-import Change from './components/Change';
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
+// Importing All The Components Here
+import SignUp from './components/SignUp'
+import Login from './components/Login'
+import About from './components/About'
+import Home from './components/Home'
+import Navbar from './components/Navbar'
 
-export const UserData = createContext()
-export default function App() {
+// Importing Css
+import './App.css'
 
-  const [name, setName] = useState("")
-  const [contact, setContact] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+// exporting SigUp Data
+export const UserDataSignUp = createContext();
+function App() {
+
+  const [userName, setUserName] = useState("yourName")
+  const [userEmail, setUserEmail] = useState("yourEmail@gmail.com")
+  const [userPhone, setUserPhone] = useState("yourPhoneNumber")
+  const [userPassword, setUserPassword] = useState("yourPassword")
   return (
     <div>
-      <UserData.Provider value={{
-        name,
-        contact, email, password, setContact, setEmail, setName, setPassword
-      }}>
-
+      <UserDataSignUp.Provider value={{ userName, setUserName, userPhone, setUserPhone, userEmail, setUserEmail, userPassword, setUserPassword }}>
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/home' element={<Home />} />
-            <Route path='/usereducer' element={<Usereducer />} />
-            <Route path='/usecontext' element={<Usecontext />} />
-            <Route path='/usestate' element={<UseState />} />
-            <Route path='/change' element={<Change />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
         </BrowserRouter>
-      </UserData.Provider>
-
-
+      </UserDataSignUp.Provider>
     </div>
   )
 }
 
+export default App
